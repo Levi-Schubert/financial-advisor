@@ -41,7 +41,7 @@ function advisor(comp, spec, name) {
 						});
 						console.log(this.name +"'s total worth is: $" + total)
 					},
-				enumerable:true,
+				enumerable:false,
 				writable:false
 			},
 		purchase:
@@ -189,7 +189,8 @@ function advisor(comp, spec, name) {
 
 let david = advisor("NSS", "developer", "John Smith")
 david.purchase("MSFT",50, 100)
-david.purchase("APPL", 100, 100)
+david.purchase("APPL", 100, 200)
+david.purchase("MSFT", 100, 150)
 david.sell("MSFT", 50, 100)
 david.sell("APPL", 100, 150)
 david.worth()
